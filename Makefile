@@ -13,4 +13,7 @@ lint:
 lint-tests:
 	pylint tests/*.py
 
-.PHONY:	test clean lint lint-tests
+dev:
+	pip install -r requirements/development.txt
+
+.PHONY:	test clean lint lint-tests dev
